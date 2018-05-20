@@ -1,2 +1,2 @@
-# ctc
-algorithms
+# Cracking the code interview
+Practice algorithms
