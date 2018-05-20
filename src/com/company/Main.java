@@ -11,6 +11,14 @@ public class Main {
         linkedList.append(7);
         //3. printout linkelist
         linkedList.printList();
-        //4. deletewithvalue
+        //4. prepend
+        linkedList.prepend(88);
+        linkedList.printList();
+        //5. deletewithvalue
+        linkedList.deleteNode(55);
+        linkedList.printList();
+
+        linkedList.deleteNode(88);
+        linkedList.printList();
     }
 }

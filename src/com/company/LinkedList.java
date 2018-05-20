@@ -20,7 +20,26 @@ public class LinkedList {
 
     }
     //todo prepend to beginning
-    //todo delete
+    public void prepend(int data){
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+    }
+    //todo delete, walked through from head
+    public void deleteNode(int data){
+        if(head.data == data){
+            head = head.next;
+        }
+
+        Node current = head;
+        while(current.next != null){
+            if(current.next.data == data){
+                current.next = current.next.next;
+                return;
+            }
+            current = current.next;
+        }
+    }
     //todo print linkedlist
     public void printList(){
         Node current = head;
@@ -28,5 +47,6 @@ public class LinkedList {
             System.out.print(current.data + ", ");
             current = current.next;
         }
+        System.out.println();
     }
 }
