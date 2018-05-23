@@ -37,5 +37,16 @@ public class Queue {
         if(tail != null)
             tail.next = newNode;
         tail = newNode;
+        if(head == null)
+            head = newNode;
+    }
+
+    void printQueue(){
+        Node current = head;
+        while (current != null){
+            System.out.print(current.data + ", ");
+            current = current.next;
+        }
+        System.out.println();
     }
 }

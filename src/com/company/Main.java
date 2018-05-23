@@ -4,7 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+        Queue queue = new Queue();
+        queue.add(1);
+        queue.add(46);
+        queue.add(8);
+        queue.printQueue();
 //        testLinkedList();
     }
 
