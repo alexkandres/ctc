@@ -3,7 +3,13 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	    //1. create LinkedList
+
+
+//        testLinkedList();
+    }
+
+    private static void testLinkedList() {
+        //1. create LinkedList
         LinkedList linkedList = new LinkedList();
         //2. linkedLst.append data(multiple data)
         linkedList.append(45);
